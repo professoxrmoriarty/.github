@@ -1,43 +1,41 @@
-name: "🐞 Bug 反馈 · Bug Report"
-description: "报告一个可复现的问题 / Report a reproducible problem"
+name: "🐞 Bug Report"
+description: "Report a reproducible problem"
 title: "[Bug] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        感谢反馈！请尽量完整填写，便于我们快速定位问题。
         Thanks for the report. Please fill in as much detail as possible so we can reproduce it quickly.
 
-        > ⚠️ 安全漏洞请勿在此公开提交，请按私密披露流程联系我们（见 SECURITY.md）。
-        > Do NOT report security vulnerabilities here; please use private disclosure instead.
+        > ⚠️ Do NOT report security vulnerabilities here; please use private disclosure instead (see SECURITY.md).
   - type: dropdown
     id: project
     attributes:
-      label: 相关项目 · Project
-      description: 这个问题出现在哪个项目？ / Which project is affected?
+      label: Project
+      description: Which project is affected?
       options:
-        - Yaklang (语言/引擎 · language & engine)
-        - Yakit (平台 · platform)
+        - Yaklang (language & engine)
+        - Yakit (platform)
         - Memfit AI
         - HackSkills / HackBenchmark / RedHaze
-        - 文档/官网 · Docs & Website
-        - 其他 · Other
+        - Docs & Website
+        - Other
     validations:
       required: true
   - type: textarea
     id: what-happened
     attributes:
-      label: 问题描述 · What happened
-      description: 清晰描述问题现象，以及你期望的正确行为。 / Describe the bug and what you expected.
-      placeholder: 我执行了……，结果出现……，但期望应该是……
+      label: What happened
+      description: Describe the bug and what you expected.
+      placeholder: I executed..., and the result was..., but I expected...
     validations:
       required: true
   - type: textarea
     id: reproduce
     attributes:
-      label: 复现步骤 · Steps to reproduce
-      description: 请给出最小可复现步骤；如有脚本/请求包请脱敏后附上。 / Minimal steps to reproduce.
+      label: Steps to reproduce
+      description: Minimal steps to reproduce; please attach redacted scripts/request packets if available.
       value: |
         1.
         2.
@@ -47,28 +45,28 @@ body:
   - type: textarea
     id: env
     attributes:
-      label: 运行环境 · Environment
-      description: 操作系统、版本号等。 / OS, version, etc.
+      label: Environment
+      description: OS, version, etc.
       value: |
         - OS: (macOS / Linux / Windows)
-        - Yak / Yakit 版本 (yak version):
-        - 安装方式 · Install method:
+        - Yak / Yakit Version (yak version):
+        - Install method:
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
-      label: 日志 / 截图 · Logs / Screenshots
-      description: 粘贴相关日志或截图（请脱敏）。 / Paste relevant logs or screenshots (redacted).
+      label: Logs / Screenshots
+      description: Paste relevant logs or screenshots (redacted).
       render: text
     validations:
       required: false
   - type: checkboxes
     id: checks
     attributes:
-      label: 确认 · Confirmation
+      label: Confirmation
       options:
-        - label: 我已搜索过现有 issue，确认这不是重复问题。 / I searched existing issues and this is not a duplicate.
+        - label: I searched existing issues and this is not a duplicate.
           required: true
-        - label: 这不是安全漏洞（安全漏洞走私密披露）。 / This is not a security vulnerability.
+        - label: This is not a security vulnerability.
           required: true
