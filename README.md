@@ -2,7 +2,7 @@
 
 <img src="profile/assets/yak-logo.png" alt="YAK" width="280" />
 
-# `.github` · Professoxrmoriarty Organization Meta Repository
+# `.github` · Yaklang Organization Meta Repository(English Edition)
 
 <em>Organization-level meta repository for <a href="https://github.com/professoxrmoriarty">@professoxrmoriarty</a></em>
 
