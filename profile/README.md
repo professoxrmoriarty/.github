@@ -2,9 +2,9 @@
 
 <img src="assets/yak-logo.png" alt="YAK" width="260" />
 
-# Cybersecurity Engineering · AI-Native Defense Systems
+# Red Team Engineering · AI Security Automation
 
-<em>Building a CDSL-centric platform for security research, offensive automation, and resilient AI workflows.</em>
+<em>CDSL-first security infrastructure for offensive research, exploit workflows, and AI-driven defense operations.</em>
 
 [![Website](https://img.shields.io/badge/yaklang.com-FF6A00?style=flat-square&labelColor=1a1a1a)](https://yaklang.com)
 [![Yakit](https://img.shields.io/badge/Yakit-FF6A00?style=flat-square&labelColor=1a1a1a)](https://yaklang.com)
@@ -14,45 +14,41 @@
 
 </div>
 
-We research, design, and ship infrastructure for modern cybersecurity operations: protocol analysis, red-team automation, exploit validation, secure software workflows, and AI-assisted defensive tooling.
+We design and ship offensive security tooling for modern attack-surface analysis, exploit validation, automation, and adversarial simulation.
 
-Our foundation is a domain-specific cybersecurity language and runtime stack: <strong>CDSL / Yaklang</strong> — designed to unify security reasoning, scripting, automation, and intelligent agent workflows.
+Our core platform is <strong>Yaklang / CDSL</strong> — a domain-specific cybersecurity language built to express attacks, workflows, protocol logic, red-team operations, and AI-enhanced security reasoning in a programmable, auditable way.
 
-| Area | Stack / Project | Focus |
+| Capability | Project | Mission |
 | :--- | :--- | :--- |
-| CDSL & Runtime | [Yaklang](https://yaklang.com) | Cybersecurity DSL, VM, language runtime, protocol primitives |
-| Security Platform | [Yakit](https://yaklang.com) | Interactive security testing, workflow automation, custom tooling |
-| Code & Audit | [IRify](https://ssa.to) | Static analysis, vulnerability triage, software assurance workflows |
-| AI x Security | [Memfit](https://memfit.ai) · [YAK Knowledge](https://rag.yaklang.com) | Agentic security reasoning, knowledge retrieval, analysis copilots |
-| Skills & Evaluation | [HackSkills](https://skills.hackbenchmark.com) · [YakSkills](https://skills.yaklang.io) | Security challenge automation, benchmark suites, adversarial evaluation |
+| Security DSL & Runtime | [Yaklang](https://yaklang.com) | Protocol logic, exploit workflows, automation primitives |
+| Red Team Platform | [Yakit](https://yaklang.com) | Interactive offensive tooling, custom pipelines, testing workflows |
+| Code & Audit | [IRify](https://ssa.to) | Static review, vulnerability triage, application security analysis |
+| AI Security Agents | [Memfit](https://memfit.ai) · [YAK Knowledge](https://rag.yaklang.com) | Agentic reasoning for security tasks, knowledge retrieval, decision support |
+| Security Skills & Benchmarks | [HackSkills](https://skills.hackbenchmark.com) · [YakSkills](https://skills.yaklang.io) | Challenge automation, evaluation, adversarial training |
 
-## What we build
+## Focus areas
 
-- Protocol and payload engineering
-- Red-team automation and validation pipelines
-- Security testing workflows for modern systems
-- Code audit and vulnerability assessment tooling
-- AI-assisted security analysis and operator guidance
-- Defensive engineering grounded in executable security logic
+- Exploit development and validation
+- Protocol analysis and payload engineering
+- Red-team automation and reproduction workflows
+- Attack-surface mapping and simulation
+- AI-assisted security reasoning and op support
+- Defensive automation informed by real adversary logic
 
-## Core principles
+## Why it matters
 
-- Security workflows should be explicit, programmable, and repeatable.
-- Automation must be observable, auditable, and safe by design.
-- AI should amplify security expertise, not replace reasoning.
-- Defensive tooling must be built around real-world attack surfaces and operational constraints.
+Security is no longer a collection of isolated scripts. It is a programmable system of logic, evidence, and operational behavior.
 
-## Security-first philosophy
+We build tools that:
 
-We believe effective cybersecurity is not only a matter of tools, but of building the right abstractions:
+- encode attack logic clearly and repeatably
+- automate red-team workflows without losing traceability
+- turn adversarial reasoning into executable security tasks
+- make AI useful for security operations instead of opaque black-box outputs
+- connect offensive tradecraft to defensible, testable automation
 
-- Domain-aware primitives over ad hoc scripting
-- Reproducible validation over one-off experiments
-- Secure-by-default automation over fragile operational hacks
-- Human-readable security logic over opaque black-box workflows
-
-> Doing the hard, right things. — from the Professoxrmoriarty / Yaklang ecosystem.
+> We build the tooling, the language, and the workflows behind modern cybersecurity operations.
 
 <div align="center">
-<sub>Cybersecurity Engineering · Research · Automation · AI Defense</sub>
+<sub>Offensive Security · Red Team · AI Security · Agentic Automation</sub>
 </div>
