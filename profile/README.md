@@ -1,29 +1,66 @@
 <div align="center">
 
-<img src="assets/yak-logo.png" alt="YAK" width="200" />
+<img src="assets/yak-logo.png" alt="YAK" width="280" />
 
-<br/>
+# `.github` · Yaklang Organization Meta Repository (English Edition)
 
-**安全能力融合 · AI 原生的网络安全技术栈**　|　<em>A CDSL-centric, AI-native cybersecurity stack</em>
-
-[![Website](https://img.shields.io/badge/yaklang.com-FF6A00?style=flat-square&labelColor=1a1a1a)](https://yaklang.com)
-[![Memfit](https://img.shields.io/badge/memfit.ai-FF6A00?style=flat-square&labelColor=1a1a1a)](https://memfit.ai)
-[![SSA](https://img.shields.io/badge/ssa.to-FF6A00?style=flat-square&labelColor=1a1a1a)](https://ssa.to)
-[![Skills](https://img.shields.io/badge/skills.hackbenchmark.com-FF6A00?style=flat-square&labelColor=1a1a1a)](https://skills.hackbenchmark.com)
-![Yakit](https://img.shields.io/github/stars/yaklang/yakit?style=flat-square&color=FF6A00&labelColor=1a1a1a&label=Yakit)
-![Yaklang](https://img.shields.io/github/stars/yaklang/yaklang?style=flat-square&color=FF6A00&labelColor=1a1a1a&label=Yaklang)
+<em>Organization-level meta repository for <a href="https://github.com/professoxrmoriarty">@professoxrmoriarty</a></em>
 
 </div>
 
-国内最早提出「安全能力融合」理念的开源安全团队，围绕自研网络安全领域专用语言 **CDSL（Yaklang）**，构建从语言、引擎到安全平台与 AI 智能体的完整技术栈。
+---
 
-<em>An open-source security team building a full stack — language, engine, platform and AI agents — around a self-designed Cybersecurity DSL (CDSL / Yaklang).</em>
+## What is this
 
-| 方向 Track | 项目 Projects | 简介 About |
-| :-- | :-- | :-- |
-| CDSL 引擎 | [Yaklang](https://yaklang.com) | 网络安全领域编程语言与虚拟机引擎 |
-| 生产力产品 | [Yakit](https://yaklang.com) · [IRify 代码审计](https://ssa.to) | 交互式安全测试平台与代码审计 |
-| AI x 安全 | [Memfit 安全 Agent](https://memfit.ai) · [YAK 知识库](https://rag.yaklang.com) | 安全智能体与 Agentic 知识检索 |
-| 安全能力评估 | [HackSkills](https://skills.hackbenchmark.com) · [YakSkills](https://skills.yaklang.io) | AI Agent 攻防技能库与评测基准 |
+This is a special repository provided by GitHub for "Organizations". It does not contain product code, but solely hosts the shared "storefront" and "default configurations" for the entire [@professoxrmoriarty](https://github.com/professoxrmoriarty) organization.
 
-<sub>做难而正确的事 · Do the hard, right things.　|　微信公众号「Yak Project」　·　© Yaklang.io Project</sub>
+The most important file is [`profile/README.md`](profile/README.md) — it will be directly rendered by GitHub as the introduction (BIO) at the top of the organization's homepage <https://github.com/professoxrmoriarty>.
+
+> A special GitHub repository whose `profile/README.md` is rendered as the public profile of the entire organization.
+
+## Layout
+
+```text
+.github/
+├── README.md            # This file: explanation of the repository itself (only visible on this repo's page)
+└── profile/
+    ├── README.md        # Organization homepage BIO (rendered at the top of github.com/professoxrmoriarty)
+    └── assets/          # Images used in the BIO (Hero / LOGO / Icons)
+        ├── hero.png
+        ├── yak-logo.png
+        └── yak-icon.png
+```
+
+## How to update the org profile
+
+1. Edit [`profile/README.md`](profile/README.md). Place images in `profile/assets/` and reference them using relative paths like `assets/xxx.png`.
+2. Commit and push to the default branch.
+3. Refresh <https://github.com/professoxrmoriarty> to see the updates (usually takes effect immediately).
+
+## What else this repo can do
+
+Besides the organization profile, this repository also centralizes the hosting of "organization-level default resources". If any member repository does not have a corresponding file, it will fall back to the version in this `.github` repository.
+
+| Capability | Path | Function |
+| :--- | :--- | :--- |
+| Org Profile BIO | `profile/README.md` | Rendered as the organization profile introduction (core purpose of this repo) |
+| Default Issue Templates | `.github/ISSUE_TEMPLATE/*.md` / `*.yml` | Shared Bug / Feature report templates across the org |
+| Issue Template Config | `.github/ISSUE_TEMPLATE/config.yml` | Disables blank issues, guides to documentation / community |
+| Default PR Template | `.github/PULL_REQUEST_TEMPLATE.md` | Unifies PR description structures and self-checklists |
+| Contributing Guide | `CONTRIBUTING.md` | Organization-wide default contribution guidelines |
+| Code of Conduct | `CODE_OF_CONDUCT.md` | Community code of conduct |
+| Security Policy | `SECURITY.md` | Vulnerability disclosure process and contact info (crucial for security teams) |
+| Funding Options | `FUNDING.yml` | Configuration for the Sponsor button on repository pages |
+| Support Options | `SUPPORT.md` | Guides users to the correct channels for seeking help |
+| Reusable Workflows | `workflow-templates/` | One-click reusable GitHub Actions templates within the org |
+| Default Discussions/Notifications | Relevant configs under `.github/` | Default collaboration configurations at the organization level |
+
+> Inheritance Rule: Member repositories will prioritize files with the same name within their own repository; they only fall back to the `.github` repository's version when missing. Therefore, you can define org-wide defaults without forcing every repo to duplicate them.
+
+## Sites
+
+[yaklang.com](https://yaklang.com) · [memfit.ai](https://memfit.ai) · [ssa.to](https://ssa.to) · [rag.yaklang.com](https://rag.yaklang.com) · [skills.yaklang.io](https://skills.yaklang.io) · [hackbenchmark.com](https://skillshackbenchmark.com) · [yaklang.io](https://yaklang.io)
+
+<div align="center">
+<sub>Do the hard, right things. — © Professoxrmoriarty Project</sub>
+</div>
