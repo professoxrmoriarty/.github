@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/yak-logo.png" alt="YAK" width="260" />
+<img src="profile/assets/yak-logo.png" alt="YAK" width="260" />
 
 # Red Team Engineering · AI Security Automation
 
