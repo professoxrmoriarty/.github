@@ -1,66 +1,58 @@
 <div align="center">
 
-<img src="assets/yak-logo.png" alt="YAK" width="280" />
+<img src="assets/yak-logo.png" alt="YAK" width="260" />
 
-# `.github` · Yaklang Organization Meta Repository (English Edition)
+# Cybersecurity Engineering · AI-Native Defense Systems
 
-<em>Organization-level meta repository for <a href="https://github.com/professoxrmoriarty">@professoxrmoriarty</a></em>
+<em>Building a CDSL-centric platform for security research, offensive automation, and resilient AI workflows.</em>
+
+[![Website](https://img.shields.io/badge/yaklang.com-FF6A00?style=flat-square&labelColor=1a1a1a)](https://yaklang.com)
+[![Yakit](https://img.shields.io/badge/Yakit-FF6A00?style=flat-square&labelColor=1a1a1a)](https://yaklang.com)
+[![Memfit](https://img.shields.io/badge/memfit.ai-FF6A00?style=flat-square&labelColor=1a1a1a)](https://memfit.ai)
+[![SSA](https://img.shields.io/badge/ssa.to-FF6A00?style=flat-square&labelColor=1a1a1a)](https://ssa.to)
+[![Skills](https://img.shields.io/badge/hackskills-FF6A00?style=flat-square&labelColor=1a1a1a)](https://skills.hackbenchmark.com)
 
 </div>
 
----
+We research, design, and ship infrastructure for modern cybersecurity operations: protocol analysis, red-team automation, exploit validation, secure software workflows, and AI-assisted defensive tooling.
 
-## What is this
+Our foundation is a domain-specific cybersecurity language and runtime stack: <strong>CDSL / Yaklang</strong> — designed to unify security reasoning, scripting, automation, and intelligent agent workflows.
 
-This is a special repository provided by GitHub for "Organizations". It does not contain product code, but solely hosts the shared "storefront" and "default configurations" for the entire [@professoxrmoriarty](https://github.com/professoxrmoriarty) organization.
-
-The most important file is [`profile/README.md`](profile/README.md) — it will be directly rendered by GitHub as the introduction (BIO) at the top of the organization's homepage <https://github.com/professoxrmoriarty>.
-
-> A special GitHub repository whose `profile/README.md` is rendered as the public profile of the entire organization.
-
-## Layout
-
-```text
-.github/
-├── README.md            # This file: explanation of the repository itself (only visible on this repo's page)
-└── profile/
-    ├── README.md        # Organization homepage BIO (rendered at the top of github.com/professoxrmoriarty)
-    └── assets/          # Images used in the BIO (Hero / LOGO / Icons)
-        ├── hero.png
-        ├── yak-logo.png
-        └── yak-icon.png
-```
-
-## How to update the org profile
-
-1. Edit [`profile/README.md`](profile/README.md). Place images in `profile/assets/` and reference them using relative paths like `assets/xxx.png`.
-2. Commit and push to the default branch.
-3. Refresh <https://github.com/professoxrmoriarty> to see the updates (usually takes effect immediately).
-
-## What else this repo can do
-
-Besides the organization profile, this repository also centralizes the hosting of "organization-level default resources". If any member repository does not have a corresponding file, it will fall back to the version in this `.github` repository.
-
-| Capability | Path | Function |
+| Area | Stack / Project | Focus |
 | :--- | :--- | :--- |
-| Org Profile BIO | `profile/README.md` | Rendered as the organization profile introduction (core purpose of this repo) |
-| Default Issue Templates | `.github/ISSUE_TEMPLATE/*.md` / `*.yml` | Shared Bug / Feature report templates across the org |
-| Issue Template Config | `.github/ISSUE_TEMPLATE/config.yml` | Disables blank issues, guides to documentation / community |
-| Default PR Template | `.github/PULL_REQUEST_TEMPLATE.md` | Unifies PR description structures and self-checklists |
-| Contributing Guide | `CONTRIBUTING.md` | Organization-wide default contribution guidelines |
-| Code of Conduct | `CODE_OF_CONDUCT.md` | Community code of conduct |
-| Security Policy | `SECURITY.md` | Vulnerability disclosure process and contact info (crucial for security teams) |
-| Funding Options | `FUNDING.yml` | Configuration for the Sponsor button on repository pages |
-| Support Options | `SUPPORT.md` | Guides users to the correct channels for seeking help |
-| Reusable Workflows | `workflow-templates/` | One-click reusable GitHub Actions templates within the org |
-| Default Discussions/Notifications | Relevant configs under `.github/` | Default collaboration configurations at the organization level |
+| CDSL & Runtime | [Yaklang](https://yaklang.com) | Cybersecurity DSL, VM, language runtime, protocol primitives |
+| Security Platform | [Yakit](https://yaklang.com) | Interactive security testing, workflow automation, custom tooling |
+| Code & Audit | [IRify](https://ssa.to) | Static analysis, vulnerability triage, software assurance workflows |
+| AI x Security | [Memfit](https://memfit.ai) · [YAK Knowledge](https://rag.yaklang.com) | Agentic security reasoning, knowledge retrieval, analysis copilots |
+| Skills & Evaluation | [HackSkills](https://skills.hackbenchmark.com) · [YakSkills](https://skills.yaklang.io) | Security challenge automation, benchmark suites, adversarial evaluation |
 
-> Inheritance Rule: Member repositories will prioritize files with the same name within their own repository; they only fall back to the `.github` repository's version when missing. Therefore, you can define org-wide defaults without forcing every repo to duplicate them.
+## What we build
 
-## Sites
+- Protocol and payload engineering
+- Red-team automation and validation pipelines
+- Security testing workflows for modern systems
+- Code audit and vulnerability assessment tooling
+- AI-assisted security analysis and operator guidance
+- Defensive engineering grounded in executable security logic
 
-[yaklang.com](https://yaklang.com) · [memfit.ai](https://memfit.ai) · [ssa.to](https://ssa.to) · [rag.yaklang.com](https://rag.yaklang.com) · [skills.yaklang.io](https://skills.yaklang.io) · [hackbenchmark.com](https://skillshackbenchmark.com) · [yaklang.io](https://yaklang.io)
+## Core principles
+
+- Security workflows should be explicit, programmable, and repeatable.
+- Automation must be observable, auditable, and safe by design.
+- AI should amplify security expertise, not replace reasoning.
+- Defensive tooling must be built around real-world attack surfaces and operational constraints.
+
+## Security-first philosophy
+
+We believe effective cybersecurity is not only a matter of tools, but of building the right abstractions:
+
+- Domain-aware primitives over ad hoc scripting
+- Reproducible validation over one-off experiments
+- Secure-by-default automation over fragile operational hacks
+- Human-readable security logic over opaque black-box workflows
+
+> Doing the hard, right things. — from the Professoxrmoriarty / Yaklang ecosystem.
 
 <div align="center">
-<sub>Do the hard, right things. — © Professoxrmoriarty Project</sub>
+<sub>Cybersecurity Engineering · Research · Automation · AI Defense</sub>
 </div>
