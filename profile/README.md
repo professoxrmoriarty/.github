@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src=".github/profile/assets/yak-logo.png" alt="YAK" width="280" />
+<img src="https://github.com/professoxrmoriarty/.github/blob/main/profile/assets/yak-logo.png" alt="YAK" width="280" />
 
 # Red Team Engineering · AI Security Automation
 
