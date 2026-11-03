@@ -106,20 +106,17 @@ jobs:
           for cf in ("/tmp/yaklang_cache.json", "/tmp/yakit_cache.json", "/tmp/ytray_cache.json", CACHE_FILE):
               cache.update(safe_load_json(cf))
 
-          # Bash Script များမှ စာသားများကိုပါ တိကျစွာ ဖမ်းယူနိုင်ရန် Pattern ကို တိုးချဲ့ထားပါသည်
-          TOKEN_RE = re.compile(
-              r'(//[^\n]*|/\*[\s\S]*?\*/|<!--[\s\S]*?-->|#[^\n]*)'  # 1: Comments (Bash ၏ # အပါအဝင်)
-              r'|(`[^`]*`)'                                        # 2: Backtick strings
-              r'|("(?:\\.|[^"\\\n])*")'                            # 3: Double quote strings (Bash echo/die များ)
-              r"|('(?:\\.|[^'\\\n])*')"                            # 4: Single quote strings
-              r'|(>[^<>{}`"\']*?[\u4e00-\u9fff]+[^<>{}`"\']*?<)'   # 5: XML/JSX text
-          )          source_files, md_files, yaml_files = [], [], []
+          # ဤနေရာတွင် Syntax Error ကို ဖြေရှင်းပေးထားပါသည် (လိုင်းတစ်ကြောင်းတည်းဖြင့် ပေါင်းရေးထားသည်)
+          TOKEN_RE = re.compile(r'(//[^\n]*|/\*[\s\S]*?\*/|<!--[\s\S]*?-->|#[^\n]*)|(`[^`]*`)|("(?:\\.|[^"\\\n])*")|(\'(?:\\.|[^\'\\\n])*\')|(>[^<>{}`"\']*?[\u4e00-\u9fff]+[^<>{}`"\']*?<)')
+          
+          source_files, md_files, yaml_files = [], [], []
           zh_strings = set()
           IGNORE_DIRS = {".git", ".github", "node_modules", "dist", "out", "vendor", "build", "assets"}
           IGNORE_STRINGS = {"微软雅黑", "宋体", "黑体", "苹方", "楷体", "仿宋", "Microsoft YaHei", "PingFang SC"}
 
           total_files = total_lines = total_zh_chars = 0
           TARGET_EXTS = ('.go', '.ts', '.tsx', '.js', '.jsx', '.py', '.json', '.yaml', '.yml', '.md', '.txt', '.cs', '.xaml', '.swift', '.sf', '.sh')
+
           for root, dirs, files in os.walk("."):
               dirs[:] = [d for d in dirs if d not in IGNORE_DIRS and not d.endswith('Tests')]
               for file in files:
@@ -155,10 +152,11 @@ jobs:
                               is_xml = file.endswith('.xaml')
                               is_tsx = file.endswith('.tsx')
                               is_go = file.endswith('.go')
+                              is_sh = file.endswith('.sh')
                               for m in TOKEN_RE.finditer(c):
                                   comment, special, dq, sq, xml_s = m.groups()
-                                  if comment or special: continue
-                                  tok = dq or (sq if not is_go else None)
+                                  if comment and not (is_sh and has_zh(comment)): continue
+                                  tok = dq or (sq if not is_go else None) or special
                                   if tok and has_zh(tok):
                                       inner = tok[1:-1]
                                       if inner.strip() not in IGNORE_STRINGS and len(inner) <= 500: zh_strings.add(inner)
@@ -205,15 +203,10 @@ jobs:
 
           for p, c in source_files:
               try:
-                  is_xml = p.endswith('.xaml')
-                  is_tsx = p.endswith('.tsx')
-                  is_go = p.endswith('.go')
-                  is_sh = p.endswith('.sh') # Bash ဖိုင်ဟုတ်မဟုတ် စစ်ဆေးခြင်း
+                  is_xml = p.endswith('.xaml'); is_tsx = p.endswith('.tsx'); is_go = p.endswith('.go'); is_sh = p.endswith('.sh')
                   def repl(m):
                       comment, special, dq, sq, xml_s = m.groups()
-                      # Bash ဖိုင်ဆိုလျှင် # comment ထဲက စာသားကိုပါ ဘာသာပြန်စေချင်လျှင် ဤနေရာတွင် စစ်ဆေးနိုင်သည် (လောလောဆယ် Code String ကိုသာ ပြန်ပါမည်)
                       if comment and not (is_sh and has_zh(comment)): return m.group(0)
-                      
                       tok = dq or (sq if not is_go else None) or special
                       if tok:
                           if not has_zh(tok): return tok
@@ -229,7 +222,6 @@ jobs:
                           trail = inner_raw[len(inner_raw.rstrip()):]
                           return f">{lead}{trans}{trail}<"
                       return m.group(0)
-                  
                   nc = TOKEN_RE.sub(repl, c)
                   if nc != c:
                       with open(p, 'w', encoding='utf-8') as f: f.write(nc)
