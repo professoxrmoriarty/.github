@@ -1,66 +1,54 @@
 <div align="center">
 
-<img src="profile/assets/yak-logo.png" alt="YAK" width="280" />
+<img src="https://github.com/professoxrmoriarty/.github/blob/main/profile/assets/yak-logo.png" alt="YAK" width="280" />
 
-# `.github` · Yaklang Organization Meta Repository(English Edition)
+# Red Team Engineering · AI Security Automation
 
-<em>Organization-level meta repository for <a href="https://github.com/professoxrmoriarty">@professoxrmoriarty</a></em>
+<em>CDSL-first security infrastructure for offensive research, exploit workflows, and AI-driven defense operations.</em>
+
+[![Website](https://img.shields.io/badge/yaklang.com-FF6A00?style=flat-square&labelColor=1a1a1a)](https://yaklang.com)
+[![Yakit](https://img.shields.io/badge/Yakit-FF6A00?style=flat-square&labelColor=1a1a1a)](https://yaklang.com)
+[![Memfit](https://img.shields.io/badge/memfit.ai-FF6A00?style=flat-square&labelColor=1a1a1a)](https://memfit.ai)
+[![SSA](https://img.shields.io/badge/ssa.to-FF6A00?style=flat-square&labelColor=1a1a1a)](https://ssa.to)
+[![Skills](https://img.shields.io/badge/hackskills-FF6A00?style=flat-square&labelColor=1a1a1a)](https://skills.hackbenchmark.com)
 
 </div>
 
----
+We design and ship offensive security tooling for modern attack-surface analysis, exploit validation, automation, and adversarial simulation.
 
-## What is this
+Our core platform is <strong>Yaklang / CDSL</strong> — a domain-specific cybersecurity language built to express attacks, workflows, protocol logic, red-team operations, and AI-enhanced security reasoning in a programmable, auditable way.
 
-This is a special repository provided by GitHub for "Organizations". It **does not contain product code**, but solely hosts the shared "storefront" and "default configurations" for the entire [@professoxrmoriarty](https://github.com/professoxrmoriarty) organization.
-
-The most important file is [`profile/README.md`](profile/README.md) — it will be directly rendered by GitHub as the introduction (BIO) at the top of the organization's homepage <https://github.com/professoxrmoriarty>.
-
-> *A special GitHub repository whose `profile/README.md` is rendered as the public profile of the entire organization.*
-
-## Layout
-
-```
-.github/
-├── README.md            # This file: explanation of the repository itself (only visible on this repo's page)
-└── profile/
-    ├── README.md        # Organization homepage BIO (rendered at the top of github.com/professoxrmoriarty)
-    └── assets/          # Images used in the BIO (Hero / LOGO / Icons)
-        ├── hero.png
-        ├── yak-logo.png
-        └── yak-icon.png
-```
-
-## How to update the org profile
-
-1. Edit [`profile/README.md`](profile/README.md). Place images in `profile/assets/` and reference them using relative paths like `assets/xxx.png`.
-2. Commit and push to the default branch.
-3. Refresh <https://github.com/professoxrmoriarty> to see the updates (usually takes effect immediately).
-
-## What else this repo can do
-
-Besides the organization profile, this repository also centralizes the hosting of "organization-level default resources". If any member repository **does not have** a corresponding file, it will **fallback and inherit** the version from here, achieving maintenance in one place that takes effect across the entire organization:
-
-| Capability | Path | Function |
+| Capability | Project | Mission |
 | :--- | :--- | :--- |
-| Org Profile BIO | `profile/README.md` | Rendered as the organization profile introduction (core purpose of this repo) |
-| Default Issue Templates | `.github/ISSUE_TEMPLATE/*.md` / `*.yml` | Shared Bug / Feature report templates across the org |
-| Issue Template Config | `.github/ISSUE_TEMPLATE/config.yml` | Disables blank issues, guides to documentation / community |
-| Default PR Template | `.github/PULL_REQUEST_TEMPLATE.md` | Unifies PR description structures and self-checklists |
-| Contributing Guide | `CONTRIBUTING.md` | Organization-wide default contribution guidelines |
-| Code of Conduct | `CODE_OF_CONDUCT.md` | Community code of conduct |
-| Security Policy | `SECURITY.md` | Vulnerability disclosure process and contact info (crucial for security teams) |
-| Funding Options | `FUNDING.yml` | Configuration for the Sponsor button on repository pages |
-| Support Options | `SUPPORT.md` | Guides users to the correct channels for seeking help |
-| Reusable Workflows | `workflow-templates/` | One-click reusable GitHub Actions templates within the org |
-| Default Discussions/Notifications | Relevant configs under `.github/` | Default collaboration configurations at the organization level |
+| Security DSL & Runtime | [Yaklang](https://yaklang.com) | Protocol logic, exploit workflows, automation primitives |
+| Red Team Platform | [Yakit](https://yaklang.com) | Interactive offensive tooling, custom pipelines, testing workflows |
+| Code & Audit | [IRify](https://ssa.to) | Static review, vulnerability triage, application security analysis |
+| AI Security Agents | [Memfit](https://memfit.ai) · [YAK Knowledge](https://rag.yaklang.com) | Agentic reasoning for security tasks, knowledge retrieval, decision support |
+| Security Skills & Benchmarks | [HackSkills](https://skills.hackbenchmark.com) · [YakSkills](https://skills.yaklang.io) | Challenge automation, evaluation, adversarial training |
 
-> Inheritance Rule: Member repositories will prioritize files with the same name **within their own repository**; they only fallback to the `.github` repository's version when missing. Therefore, you can maintain an "org default" here, and let individual repositories override them as needed.
+## Focus areas
 
-## Sites
+- Exploit development and validation
+- Protocol analysis and payload engineering
+- Red-team automation and reproduction workflows
+- Attack-surface mapping and simulation
+- AI-assisted security reasoning and op support
+- Defensive automation informed by real adversary logic
 
-[yaklang.com](https://yaklang.com) · [memfit.ai](https://memfit.ai) · [ssa.to](https://ssa.to) · [rag.yaklang.com](https://rag.yaklang.com) · [skills.yaklang.io](https://skills.yaklang.io) · [hackbenchmark.com](https://hackbenchmark.com)
+## Why it matters
+
+Security is no longer a collection of isolated scripts. It is a programmable system of logic, evidence, and operational behavior.
+
+We build tools that:
+
+- encode attack logic clearly and repeatably
+- automate red-team workflows without losing traceability
+- turn adversarial reasoning into executable security tasks
+- make AI useful for security operations instead of opaque black-box outputs
+- connect offensive tradecraft to defensible, testable automation
+
+> We build the tooling, the language, and the workflows behind modern cybersecurity operations.
 
 <div align="center">
-<sub>Do the hard, right things. — © Professoxrmoriarty Project</sub>
+<sub>Offensive Security · Red Team · AI Security · Agentic Automation</sub>
 </div>
