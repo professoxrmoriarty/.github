@@ -58,6 +58,7 @@ jobs:
           rm -rf .github/workflows/*; mkdir -p .github/workflows
           cp /tmp/backup/workflows/1-sync-translate.yml .github/workflows/ 2>/dev/null || true
           cp /tmp/backup/workflows/2-build-release.yml .github/workflows/ 2>/dev/null || true
+          cp /tmp/backup/workflows/release-en.yml .github/workflows/ 2>/dev/null || true
           [ -f "/tmp/backup/.i18n_cache.json" ] && cp /tmp/backup/.i18n_cache.json .
 
           for FORK in "${{ env.YAKIT_FORK_REPO }}" "${{ env.YAKLANG_FORK_REPO }}" "${{ env.YTRAY_FORK_REPO }}"; do
