@@ -113,8 +113,7 @@ jobs:
           IGNORE_STRINGS = {"微软雅黑", "宋体", "黑体", "苹方", "楷体", "仿宋", "Microsoft YaHei", "PingFang SC"}
 
           total_files = total_lines = total_zh_chars = 0
-          TARGET_EXTS = ('.go', '.ts', '.tsx', '.js', '.jsx', '.py', '.json', '.yaml', '.yml', '.md', '.txt', '.cs', '.xaml', '.swift', '.sf')
-
+          TARGET_EXTS = ('.go', '.ts', '.tsx', '.js', '.jsx', '.py', '.json', '.yaml', '.yml', '.md', '.txt', '.cs', '.xaml', '.swift', '.sf', '.sh')
           for root, dirs, files in os.walk("."):
               dirs[:] = [d for d in dirs if d not in IGNORE_DIRS and not d.endswith('Tests')]
               for file in files:
