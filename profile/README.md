@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/professoxrmoriarty/.github/blob/main/profile/assets/yak-logo.png" alt="YAK" width="280" />
+<img src="https://github.com/professoxrmoriarty/.github/blob/main/profile/assets/Yakit(English).png" alt="YAK" width="280" />
 
 # `.github` · Yaklang Organization Meta Repository(English Edition)
 
